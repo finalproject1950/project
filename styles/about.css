@@ -20,6 +20,17 @@ h1, h2, h3, nav a {
   width: 35%;
   padding-top: 10px;
 }
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center 
+}
 body {
   margin: 0px;
   background-color: rgb(199, 197, 197);
