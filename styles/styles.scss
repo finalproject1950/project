@@ -61,10 +61,10 @@ header a:focus{
 
 }
 
-
-
 .main-img{
   width: 100%;
+  opacity: 1;
+  animation: fadeIn 5s ease;
 }
 
 .banner{
@@ -72,7 +72,30 @@ header a:focus{
   position: relative;
 }
 
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 38%;
+    width: 100%;
+  }
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
 .banner h2{
+  
+  animation: slide-right 3s;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   margin-top:0;
   color:white;
