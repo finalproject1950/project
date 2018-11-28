@@ -121,6 +121,60 @@ li > a {
   top: 48%;
   left: 12%; }
 
+.info-cards {
+  padding: 15px 0px;
+  background-color: #7e7b7b;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%; }
+
+.card-holder {
+  background-color: #7e7b7b;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.card {
+  background-color: #003ec8;
+  border-radius: 4px;
+  box-shadow: 1px 1px 6px 1px black;
+  width: 65%;
+  height: 300px;
+  padding: 6px;
+  color: white;
+  font-size: 0.95em; }
+
+.card h3 {
+  margin: 0px;
+  padding: 0px; }
+
+.card > p, .card > div:nth-child(2) {
+  padding: 15px 5px;
+  margin: 0px; }
+
+.card-1, .card-3 {
+  margin-left: calc( 35% - 25px ); }
+
+.card-2, .card-4 {
+  margin-left: 25px; }
+
+.card-2 p {
+  font-size: 1.2em; }
+
+.card-3 p {
+  font-size: 2em; }
+
+.card-4 div:nth-child(2) {
+  font-size: 1.2em; }
+
+.card-header {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  background-color: #003e6b;
+  width: 100%;
+  padding: 8px;
+  color: white;
+  font-weight: 600; }
+
 @media (max-width: 1200px) {
   .banner > h1 {
     font-size: 4vw;
