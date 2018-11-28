@@ -7,7 +7,7 @@ h1, h2, h3, nav a {
 
 body {
   margin: 0px;
-  background-color: #7e7b7b;
+  background-color: rgb(199, 197, 197);
   font-family: "Karla", sans-serif; }
 
 .wrapper {
@@ -151,7 +151,7 @@ li > a {
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; }
 
 .three {
-  width: 78%;
+  width: 88%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -160,22 +160,23 @@ li > a {
   padding-top: 20px; }
 
 .info {
-  padding-top: 20%; }
+ line-height: 30px; }
 
 .item {
   width: 20%;
   text-align: center;
   border: 2px solid black;
-  border-radius: 50px; }
+  border-radius: 50px; 
+}
 
 .item2 {
-  width: 20%;
+  width: 28%;
   text-align: center;
+  display: inline-block;
   border: 2px solid black;
   border-radius: 50px; }
 
-.row-three {
-  padding-b: 10px; }
+
 
 .forest {
   width: 100%; }
@@ -208,10 +209,10 @@ li > a {
 
 @media screen and (max-width: 620px) {
   .item {
-    width: 95%; }
+    width: 45%; }
 
   .item2 {
-    width: 95%; }
+    width: 45%; }
 
   .copy {
     width: 90%; }
@@ -220,7 +221,8 @@ li > a {
     font-size: 4em; }
 
   .about {
-    width: 95%; } }
+    width: 95%; } 
+  }
 @media screen and (max-width: 400px) {
   .banner h2 {
     font-size: 2em; }
