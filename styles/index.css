@@ -27,6 +27,10 @@ header {
   justify-content: space-between;
   align-items: center; }
 
+header > a {
+  height: 100%;
+  width: auto; }
+
 header img {
   height: 100%;
   width: auto; }

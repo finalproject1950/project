@@ -6,9 +6,14 @@ header {
   align-items: center;
 }
 
-header img {
+header > a {
   height: 100%;
   width: auto;
+}
+
+header img {
+  height: 100%;
+  width: auto;  
 }
 
 nav > ul {

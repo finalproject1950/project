@@ -1,18 +1,26 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, nav a {
+  font-family: ‘Montserrat’, sans-serif;
+}
+
 body {
-  background-color: #7e7b7b;
   margin: 0px;
+  background-color: #7e7b7b;
+  font-family: "Karla", sans-serif;
 }
 
-img { max-width: 100%; height: auto; }
-
-.wrapper{
-background-color: rgb(180, 180, 180);
-width:100%;
-max-width:1200px;
-margin: 0 auto;
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: lightgrey;
+  overflow: hidden;
 }
 
-@import "header";
+@import "header"; 
 
 .main-img{
   width: 100%;
