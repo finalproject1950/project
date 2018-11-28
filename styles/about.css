@@ -167,6 +167,8 @@ li > a {
   text-align: center;
   border: 2px solid black;
   border-radius: 50px; 
+  background-color: rgb(2, 2, 97);
+  color: rgb(218, 216, 216);
 }
 
 .item2 {
@@ -174,7 +176,9 @@ li > a {
   text-align: center;
   display: inline-block;
   border: 2px solid black;
-  border-radius: 50px; }
+  border-radius: 50px;
+  background-color: rgb(2, 2, 97);
+  color: rgb(218, 216, 216);  }
 
 
 
