@@ -54,7 +54,15 @@ li > a {
 
 @media (max-width: 650px) {
   header > button {
-    display: block; }
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+    line-height: 70px;
+    margin-right: 20px; }
 
   nav > ul {
     z-index: 1;
@@ -198,48 +206,6 @@ li > a {
   display: flex;
   line-height: 100px; }
 
-@media screen and (max-width: 900px) {
-  .btn-menu {
-    display: block;
-    background-color: transparent;
-    border: none;
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: black;
-    text-transform: uppercase;
-    line-height: 70px;
-    margin-right: 20px; }
-
-  header nav {
-    display: none;
-    width: 100%;
-    clear: both; }
-
-  header nav ul {
-    display: block; }
-
-  header nav a {
-    display: block;
-    line-height: 40px;
-    text-align: center;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-family: 'Times New Roman', Times, serif; }
-
-  .show header {
-    height: auto; }
-
-  .show header nav {
-    display: block; }
-
-  .item {
-    width: 48%; }
-
-  .item2 {
-    width: 48%; }
-
-  .copy {
-    width: 90%; } }
 @media screen and (max-width: 620px) {
   .item {
     width: 95%; }
@@ -258,9 +224,6 @@ li > a {
 @media screen and (max-width: 400px) {
   .banner h2 {
     font-size: 2em; }
-
-  header h1 a {
-    font-size: 0.8em; }
 
   .copy {
     width: 90%; }
