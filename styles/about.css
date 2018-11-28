@@ -8,6 +8,7 @@ h1, h2, h3, nav a {
   color: #0000EE;
   font-style: italic;
   text-decoration:  underline;
+  padding:  5px;
 }
 .content img {
   display: block;
