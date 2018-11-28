@@ -26,3 +26,44 @@ body {
 }
 
 @import "header"; 
+
+.banner {
+  position: relative;
+  z-index: 1;
+}
+
+.banner {
+  background-color: black;
+}
+
+.banner img {
+  filter: opacity(0.8);
+}
+
+.banner > h1 {
+  position: absolute;
+  background-color: rgb(0, 62, 107);
+  color: white;
+  margin: 0px;
+  padding: 30px;
+  font-size: 3em;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  box-shadow: 0px 0px 8px 1px darkgrey;
+}
+
+.banner-course-number {
+  top: 30%;
+  left: 12%;
+}
+
+.banner-course-name {
+  top: 48%;
+  left: 12%;
+}
+
+@media (max-width: 1200px) {
+  .banner > h1 {
+    font-size: 4vw;
+    padding: 2.5vw;
+  }
+}

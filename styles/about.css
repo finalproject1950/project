@@ -24,8 +24,10 @@ header {
   align-items: center; }
 
 header > a {
-  height: 100%;
-  width: auto; }
+  height: 200%;
+  width: auto;
+  transform: translate(15px, 40px);
+  z-index: 2; }
 
 header img {
   height: 100%;
@@ -47,10 +49,11 @@ header > button {
   margin-right: 15px; }
 
 li > a {
-  padding: 5px 15px;
+  padding: 5px 20px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  color: black; }
+  color: black;
+  font-size: 1.2em; }
 
 @media (max-width: 650px) {
   header > button {
@@ -65,7 +68,7 @@ li > a {
     margin-right: 20px; }
 
   nav > ul {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     flex-direction: column;
     margin-top: 30px;
