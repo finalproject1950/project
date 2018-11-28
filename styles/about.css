@@ -10,6 +10,9 @@ h1, h2, h3, nav a {
   text-decoration:  underline;
   padding:  5px;
 }
+.content {
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
 .content img {
   display: block;
   margin-left: auto;
