@@ -1,48 +1,274 @@
-@charset "UTF-8";
 body {
-  background-color: #7e7b7b;
-  margin: auto;
-  padding: auto;
-  font-family: "Karla", sans-serif;
+  background-color: rgb(196, 196, 196);
+
 }
 
-h1, h2, h3, nav a {
-  font-family: ‘Montserrat’, sans-serif;
+img { max-width: 100%; height: auto; }
+
+.wrapper{
+background-color: rgb(180, 180, 180);
+width:100%;
+max-width:1200px;
+margin: 0 auto;
 }
-header, main {
-  margin: 0;
-  padding: 0;
-}
-.hamburger {
-    display: none;
-}
-nav ul {
-  display: flex;
+
+header{
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display:flex;
   justify-content: space-between;
+  height: 60px;
+ 
 }
-nav li {
-  display: block;
+.logo{
+  width: 70px;
+  
+}
+.btn-menu{
+  display: none;
+}
+
+nav {
+  width: 550px;
+}
+
+nav ul{
+  display:flex;   
+  justify-content: space-around;   
+  flex-wrap: wrap;
+}
+
+nav li{
+  display: block; 
   list-style-type: none;
-  font-size: 1.1em;
-  font-weight: 700;
-  padding-right: 20px;
+  font-size:1.3em;
+  font-weight: 900;
+  text-align: center;
+  line-height: 70px;
+  font-family: 'Times New Roman', Times, serif;
 }
-nav li a {
-  margin: auto;
-  padding: auto;
+
+
+header nav li a{
+  color: black;
   display: block;
-  text-decoration: none;
-  color: white;
-  line-height: 5px;
-}
-header img {
-    width: 60px;
-    justify-content: space-between;
 }
 header a:hover,
 header a:active,
 header a:focus{
-    color: rgb(134, 133, 133);
-    text-decoration: none;
+  color: rgb(134, 133, 133);
+  text-decoration: none;
+
+}
+
+
+
+.main-img{
+  width: 100%;
+}
+
+.banner{
+
+  position: relative;
+}
+
+.banner h2{
+  
+  margin-top:0;
+  color:white;
+  text-transform: uppercase;
+  font-size:7em;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50%, -50%)
+}
+.coursegoals
+{
+  display:grid;
+  justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    padding: 10px;
+  }
+  .coursegoals li{
+padding: 5px;
+  }
+.ourcraft
+{
+  font-family: 'Courier New', Courier, monospace;
+}
+.about{
+  width: 700px;
+  margin: 0 auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+.about-title{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.project {
+  padding-top: 0px;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.three{
+  width: 78%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.info
+{
+  padding-top: 20%;
+}
+.item{
+  width: 20%;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.item2 {
+  width: 20%;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.row-three
+{
+  padding-b: 10px;
+}
+.forest{
+  width: 100%;
+}
+
+.sub-project { 
+  font-size: 1.7em;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.text{
+  padding: 15px 15px;
+}
+
+.foot{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 400px;
+  text-align: center;
+  text-decoration: none;
+}
+.copy{
+  display:flex;
+  line-height: 100px;
+}
+
+
+@media screen and (max-width: 900px){
+
+  .btn-menu {
+      display: block;
+      background-color: transparent;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: black;
+      text-transform: uppercase;
+      line-height: 70px;
+      margin-right: 20px;
+  }
+  header nav {
+  display: none;
+  width: 100%;
+      clear: both;
+      
+}
+
+header nav ul {
+  display: block;
+}
+
+header nav a {
+  display: block;
+  line-height: 40px;
+      text-align: center;
+      padding-bottom:0;
+      margin-bottom:0;
+      font-family: 'Times New Roman', Times, serif;
+}
+
+.show header {
+  height: auto;
+}
+
+.show header nav {
+      display: block;
+  }
+  
+  .item{
+      width: 48%;
+  }
+  .item2 {
+      width:48%;
+  }
+ .copy {
+     width: 90%;
+ }
+
+}
+
+@media screen and (max-width: 620px){
+  .item{
+      width:95%;
+  }
+  .item2 {
+      width:95%;
+  }
+.copy {
+  width: 90%;
+}
+  .banner h2{
+      font-size:4em;
+  }
+
+  .about{
+      width:95%;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  .banner h2{
+      font-size:2em;
+  }
+
+  header h1 a{
+      font-size: 0.8em;
+  }
+
+  .copy{
+      width:90%
+  }
+
+  .address{
+      width:90%
+  }
 
 }
