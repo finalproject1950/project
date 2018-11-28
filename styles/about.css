@@ -4,12 +4,22 @@
 
 h1, h2, h3, nav a {
   font-family: ‘Montserrat’, sans-serif; }
-
+.content a {
+  color: #0000EE;
+  font-style: italic;
+  text-decoration:  underline;
+}
+.content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  padding-top: 10px;
+}
 body {
   margin: 0px;
   background-color: rgb(199, 197, 197);
   font-family: "Karla", sans-serif; }
-
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
