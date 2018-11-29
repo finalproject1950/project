@@ -1,7 +1,18 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box; }
-
+  @keyframes slide-right {
+    from {
+      margin-left: -100%;
+      width: 100%; }
+    to {
+      margin-left: 0%;
+      width: 50%; } }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
 h1, h2, h3, nav a {
   font-family: ‘Montserrat’, sans-serif; }
 
@@ -58,6 +69,10 @@ li > a {
   font-family: 'Roboto', sans-serif;
   color: black;
   font-size: 1.2em; }
+.banner {
+  position: relative;
+  animation: fadeIn 5s ease;
+}
 
 @media (max-width: 650px) {
   header > a {
