@@ -1,5 +1,14 @@
 window.onload = () => {
 	var menuButton = document.getElementsByClassName('btn-menu')[0];
+	var scrollToTop = document.getElementsByClassName('back-to-top-btn')[0];
+
+	scrollToTop.onclick = () => {
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: 'smooth'
+		})
+	}
 
 	menuButton.onclick = () => {
 		var navButtons = document.getElementsByClassName('nav_buttons'),
