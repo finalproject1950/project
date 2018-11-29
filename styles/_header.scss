@@ -45,6 +45,10 @@ li > a {
 }
 
 @media (max-width: 650px) {
+  header > a {
+    height: 20vw;
+  }
+
   header > button {
       display: block;
       background-color: transparent;

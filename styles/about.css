@@ -56,6 +56,9 @@ li > a {
   font-size: 1.2em; }
 
 @media (max-width: 650px) {
+  header > a {
+    height: 20vw; }
+
   header > button {
     display: block;
     background-color: transparent;
