@@ -4,21 +4,50 @@
 
 h1, h2, h3, nav a {
   font-family: ‘Montserrat’, sans-serif; }
-
+.content a {
+  color: #0000EE;
+  font-style: italic;
+  text-decoration:  underline;
+  padding:  5px;
+}
+.content {
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+.content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  padding-top: 10px;
+}
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center 
+}
 body {
   margin: 0px;
-  background-color: #7e7b7b;
+  background-color: rgb(199, 197, 197);
   font-family: "Karla", sans-serif; }
-
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   background-color: lightgrey;
-  overflow: hidden; }
-
+  overflow: hidden; 
+  padding-left: 10px;
+ }
+.content {
+  padding-top: 100px;
+}
 header {
   height: 60px;
-  background-color: lightgrey;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -157,7 +186,7 @@ li > a {
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; }
 
 .three {
-  width: 78%;
+  width: 88%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -166,22 +195,27 @@ li > a {
   padding-top: 20px; }
 
 .info {
-  padding-top: 20%; }
+ line-height: 30px; }
 
 .item {
   width: 20%;
   text-align: center;
   border: 2px solid black;
-  border-radius: 50px; }
+  border-radius: 50px; 
+  background-color: rgb(2, 2, 97);
+  color: rgb(218, 216, 216);
+}
 
 .item2 {
   width: 20%;
   text-align: center;
+  display: inline-block;
   border: 2px solid black;
-  border-radius: 50px; }
+  border-radius: 50px;
+  background-color: rgb(2, 2, 97);
+  color: rgb(218, 216, 216);  }
 
-.row-three {
-  padding-b: 10px; }
+
 
 .forest {
   width: 100%; }
@@ -214,10 +248,10 @@ li > a {
 
 @media screen and (max-width: 620px) {
   .item {
-    width: 95%; }
+    width: 45%; }
 
   .item2 {
-    width: 95%; }
+    width: 45%; }
 
   .copy {
     width: 90%; }
@@ -226,7 +260,8 @@ li > a {
     font-size: 4em; }
 
   .about {
-    width: 95%; } }
+    width: 95%; } 
+  }
 @media screen and (max-width: 400px) {
   .banner h2 {
     font-size: 2em; }
