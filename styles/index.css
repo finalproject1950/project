@@ -22,7 +22,7 @@ body {
 
 header {
   height: 60px;
-  background-color: lightgrey;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -101,7 +101,7 @@ li > a {
   z-index: 1; }
 
 .banner {
-  background-color: #003e6b; }
+  background-color: black; }
 
 .banner img {
   filter: opacity(0.8); }
@@ -114,7 +114,7 @@ li > a {
   padding: 30px;
   font-size: 3em;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-  box-shadow: 0px 0px 8px 1px #003e3c; }
+  box-shadow: 0px 0px 8px 1px darkgrey; }
 
 .banner-course-number {
   top: 30%;
@@ -126,20 +126,20 @@ li > a {
 
 .info-cards {
   padding: 15px 0px;
-  background-color: lightgrey;
+  background-color: #7e7b7b;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%; }
 
 .card-holder {
-  background-color: lightgrey;
+  background-color: #7e7b7b;
   padding-top: 15px;
   padding-bottom: 15px; }
 
 .card {
   background-color: #003ec8;
   border-radius: 4px;
-  box-shadow: 1px 1px 6px 1px #003e3c;
+  box-shadow: 1px 1px 6px 1px black;
   width: 65%;
   height: 300px;
   padding: 6px;
@@ -179,6 +179,7 @@ li > a {
   color: white;
   font-weight: 600; }
 
+<<<<<<< HEAD
 .banner-get-started-h2 {
   position: absolute;
   margin: 0px;
@@ -250,6 +251,8 @@ footer div:nth-child(2) button:hover {
 @media (max-width: 540px) {
   footer {
     grid-template-columns: 1fr; } }
+=======
+>>>>>>> parent of 7e0b81a... completed home page and added a footer
 @media (max-width: 1200px) {
   .banner > h1, .banner > h2 {
     font-size: 4vw;
