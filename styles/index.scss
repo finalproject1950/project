@@ -33,7 +33,7 @@ body {
 }
 
 .banner {
-  background-color: black;
+  background-color: rgb(0, 62, 107);
 }
 
 .banner img {
@@ -127,7 +127,6 @@ body {
   font-weight: 600;
 }
 
-<<<<<<< HEAD
 .banner-get-started-h2 {
   position: absolute;
   margin: 0px;
@@ -222,11 +221,5 @@ body {
   .card {
     margin-left: auto;
     margin-right: auto;
-=======
-@media (max-width: 1200px) {
-  .banner > h1 {
-    font-size: 4vw;
-    padding: 2.5vw;
->>>>>>> parent of 7e0b81a... completed home page and added a footer
   }
 }

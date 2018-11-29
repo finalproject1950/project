@@ -101,7 +101,7 @@ li > a {
   z-index: 1; }
 
 .banner {
-  background-color: black; }
+  background-color: #003e6b; }
 
 .banner img {
   filter: opacity(0.8); }
@@ -179,7 +179,6 @@ li > a {
   color: white;
   font-weight: 600; }
 
-<<<<<<< HEAD
 .banner-get-started-h2 {
   position: absolute;
   margin: 0px;
@@ -251,8 +250,6 @@ footer div:nth-child(2) button:hover {
 @media (max-width: 540px) {
   footer {
     grid-template-columns: 1fr; } }
-=======
->>>>>>> parent of 7e0b81a... completed home page and added a footer
 @media (max-width: 1200px) {
   .banner > h1, .banner > h2 {
     font-size: 4vw;
