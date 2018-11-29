@@ -1,26 +1,13 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box; }
-  @keyframes slide-right {
-    from {
-      margin-left: -100%;
-      width: 120%; }
-    to {
-      margin-left: 0%;
-      width: 100%; } }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0; }
-    100% {
-      opacity: 1; } }
+
 h1, h2, h3, nav a {
   font-family: ‘Montserrat’, sans-serif; }
 
 img {
   max-width: 100%;
-  height: auto;
-  opacity: 1;
-  animation: fadeIn 5s ease; }
+  height: auto; }
 
 body {
   margin: 0px;
@@ -111,9 +98,7 @@ li > a {
     color: white; } }
 .banner {
   position: relative;
-  z-index: 1; 
-  animation: slide-right 3s;
-}
+  z-index: 1; }
 
 .banner {
   background-color: #003e6b; }

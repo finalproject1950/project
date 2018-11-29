@@ -128,11 +128,30 @@ footer div:nth-child(2) button:hover {
   footer {
     grid-template-columns: 1fr; } }
 main {
-  padding-top: 150px;
   padding-bottom: 150px;
   background-color: white; }
 
+.banner {
+  background-color: #003e6b; }
+
+.banner img {
+  filter: opacity(0.8); }
+
+.banner > h1 {
+  position: absolute;
+  background-color: #003e6b;
+  color: white;
+  margin: 0px;
+  padding: 30px;
+  font-size: 3em;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  box-shadow: 0px 0px 8px 1px darkgrey;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 main section {
+  padding-top: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

@@ -9,9 +9,7 @@
   padding: 5px; }
 
 .content {
-  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; 
-  padding-left: 15px;
-padding-top: 125px;}
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; }
 
 .content img {
   display: block;
@@ -163,10 +161,10 @@ footer div:nth-child(2) button:hover {
 @keyframes slide-right {
   from {
     margin-left: -100%;
-    width: 0%; }
+    width: 300%; }
   to {
-    margin-left: 0%;
-    width: 29%; } }
+    margin-left: 38%;
+    width: 100%; } }
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -175,16 +173,16 @@ footer div:nth-child(2) button:hover {
 .banner h2 {
   animation: slide-right 3s;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-  margin: 0px;
+  margin-top: 0;
   color: white;
-  padding: 20px; 
+  text-transform: uppercase;
   font-size: 7em;
+  margin: auto;
   position: absolute;
-  background-color: #003e6b;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  box-shadow: 0px 0px 8px 1px darkgrey;  }
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); }
 
 .coursegoals {
   display: grid;
@@ -286,7 +284,10 @@ footer div:nth-child(2) button:hover {
     font-size: 4em; }
 
   .about {
-    width: 95%; } }
+    width: 95%; }
+
+  .content {
+    width: 50%; } }
 @media screen and (max-width: 400px) {
   .banner h2 {
     font-size: 2em; }
