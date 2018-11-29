@@ -163,10 +163,10 @@ footer div:nth-child(2) button:hover {
 @keyframes slide-right {
   from {
     margin-left: -100%;
-    width: 300%; }
+    width: 0%; }
   to {
-    margin-left: 38%;
-    width: 100%; } }
+    margin-left: 0%;
+    width: 29%; } }
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -175,16 +175,16 @@ footer div:nth-child(2) button:hover {
 .banner h2 {
   animation: slide-right 3s;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-  margin-top: 0;
+  margin: 0px;
   color: white;
-  text-transform: uppercase;
+  padding: 20px; 
   font-size: 7em;
-  margin: auto;
   position: absolute;
+  background-color: #003e6b;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 8px 1px darkgrey;  }
 
 .coursegoals {
   display: grid;
