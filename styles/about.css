@@ -9,7 +9,9 @@
   padding: 5px; }
 
 .content {
-  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; }
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+padding-top: 125px;
+padding-left: 15px; }
 
 .content img {
   display: block;
