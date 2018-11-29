@@ -2,6 +2,35 @@
 * {
   box-sizing: border-box; }
 
+  .content a {
+    color: #0000EE;
+    font-style: italic;
+    text-decoration:  underline;
+    padding:  5px;
+  }
+  .content {
+    padding-top: 150px;
+    padding-left: 10px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  }
+  .content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    padding-top: 10px;
+  }
+  .audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center 
+  }
 h1, h2, h3, nav a {
   font-family: ‘Montserrat’, sans-serif; }
 
