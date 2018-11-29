@@ -1,0 +1,780 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Lesson 3</TITLE>
+	<link rel="stylesheet" type="text/css" href="./styles/about.css">
+</HEAD>
+<BODY>
+		<div class="wrapper">
+                <header>
+        
+                        <a class="logo" href=""><img src="./images/logo.png" alt= "BCIT Logo"></a>
+                        
+                        <nav>
+                            <ul>
+                                    <li class="nav_buttons"><a href="./index.html">Home</a></li>
+                                    <li class="nav_buttons"><a href="./about.html">About</a></li>
+                                    <li class="nav_buttons"><a href="">Schedule</a></li>
+                                    <li class="nav_buttons"><a href="./day1.html">Lessons</a></li>
+                                    <li class="nav_buttons"><a href="">Contact</a></li>
+                                </ul>
+                        </nav>
+                
+                        <button class="btn-menu">Menu</button>
+                        
+                    </header>
+                    <div class="content">
+  <b>Agenda</B>  </P>
+<UL>
+	<li> <A NAME="_GoBack"></A> <b>Referencing
+	Stylesheets</B>  </P>
+	<li>  <b>Importing</B>  </P>
+	<li>  <b>Fonts</B>  </P>
+	<li>  <b>Compact CSS</B>  </P>
+	<li>  <b>Advanced
+	Selectors</B>  </P>
+	<li>  <b>Rule
+	Specificity</B>  </P>
+	<li>  <b>To Do</B>  </P>
+</UL>
+  <b>Referencing CSS</B>  </P>
+  When linking to
+external style sheets, there are a number of features to be aware of:  </P>
+<UL>
+	<li>  Each stylesheet
+	requires it's own&nbsp;   <b>link</B>   &nbsp;tag  </P>
+	<li>  Multiple
+	stylesheets can be loaded (main.css, fonts.css, layout.css, etc)  </P>
+	<li>  <b>rel</B>   &nbsp;determines
+	how the HTML will use the file linked to (   <I>REQUIRED)</I>  </P>
+	<li>  <b>href</B>   &nbsp;defines
+	the path, relative or absolute, to the css file (   <I>REQUIRED</I>   )  </P>
+	<li>  <b>type</B>   &nbsp;attribute
+	is has been deprecated (dropped in HTML5)  </P>
+	<li>  <b>title</B>   &nbsp;attribute
+	allows the user to group stylesheets  </P>
+	<li>  <b>media</B>   &nbsp;attribute
+	allows you to specify what medium this should be viewed in  </P>
+</UL>
+  <b>&lt;link	rel=&quot;stylesheet&quot;
+</B>  
+</P>
+  <b>	href=&quot;http://www.mysite.com/css/styles.css&quot;
+</B>  
+</P>
+  <b>	type=&quot;text/css&quot;
+</B>  
+</P>
+  <b>	title=&quot;Main
+Style&quot; </B>  
+</P>
+  <b>	media=&quot;screen&quot;
+/&gt;</B>  </P>
+  <b>Media
+variations:&nbsp;media&nbsp;attribute</B>  </P>
+<UL>
+	<li>  <b>media=&quot;type&quot;</B>   &nbsp;can
+	be a powerful tool  </P>
+	<li>  Examples of
+	media types:  </P>
+	<UL>
+		<li>  <b>all</B>   &nbsp;-
+		well supported, commonly used (   <I>DEFAULT)</I>  </P>
+		<li>  <b>aural</B>  </P>
+		<li>  <b>braille</B>  </P>
+		<li>  <b>embossed</B>  </P>
+		<li>  <b>handheld</B>   &nbsp;-
+		not common (smart phones identify as&nbsp;   <b>screen</B>   )  </P>
+		<li>  <b>print</B>   &nbsp;-
+		well supported, commonly used  </P>
+		<li>  <b>projection</B>  </P>
+		<li>  <b>screen</B>   &nbsp;-
+		well supported, commonly used  </P>
+		<li>  <b>tty</B>  </P>
+		<li>  <b>tv</B>  </P>
+	</UL>
+	<li>  Note that most
+	smart phone devices (iPhones, Andriod, etc) do not identify
+	themselves as media type&nbsp;   <b>handheld</B>   .
+	The reasoning was that the devices were more than capable of
+	displaying standard web sites, so they identify as&nbsp;   <b>screen</B>  </P>
+</UL>
+  <b>Alternate style
+sheets:&nbsp;rel&nbsp;attribute</B>  </P>
+  You can also have
+alternate stylesheets supported  </P>
+<UL>
+	<li>  <b>rel=&quot;stylesheet&quot;</B>   &nbsp;defines
+	the default stylesheets to use  </P>
+	<li>  <b>rel=&quot;alternate
+	stylesheet&quot;</B>   &nbsp;allows different
+	styles to be defined  </P>
+	<li>  <b>Tip:</B>   &nbsp;If
+	you have multiple sheets that belong to one &quot;look&quot; make
+	sure they all have the same&nbsp;   <b>title</B>  </P>
+	<li>  You can create
+	alternate style sheets for users, allowing them to select which ones
+	they would like to see  </P>
+	<li>  An example
+	would be to create a 'Larger Text' style sheet with everything in a
+	larger font, or providing an option for users to choose an austere,
+	simple page instead of a colorful/image heavy stylesheet  </P>
+	<li>  Many browsers
+	are now giving users the ability to select which sheet they would
+	like to see. (Firefox: View &gt; Page Style)  </P>
+</UL>
+  <b>Alternate style
+sheets:&nbsp;title&nbsp;attribute</B>  </P>
+<UL>
+	<li>  A stylesheet is
+	&quot;persistent&quot; if it is linked with&nbsp;   <b>rel=&quot;stylesheet&quot;</B>   &nbsp;and
+	has no&nbsp;   <b>title</B>   &nbsp;attribute.
+	All persistent stylesheets are always used when rendering  </P>
+	<li>  A stylesheet is
+	&quot;preferred&quot; if it is linked with&nbsp;   <b>rel=&quot;stylesheet&quot;</B>   &nbsp;and
+	has a&nbsp;   <b>title</B>   &nbsp;attribute.
+	these styles will be used as the default. preferred stylesheets with
+	the same title are grouped together  </P>
+	<li>  Finally, a
+	stylesheet is &quot;alternate&quot; if it is linked
+	with&nbsp;   <b>rel=&quot;alternate
+	stylesheet&quot;</B>   &nbsp;and has a&nbsp;   <b>title</B>   .
+	These stylesheets are supposed to allow the user to choose
+	stylesheets, they are grouped together by&nbsp;   <b>title</B>   &nbsp;and
+	show up in the browser's stylesheet selector if it has one (   <b>View
+	&gt; Page Style</B>   &nbsp;in Firefox). Each
+	group (by&nbsp;   <b>title</B>   )
+	is mutually exclusive.  </P>
+</UL>
+  <b>Persistent Styles</B>  </P>
+  Persistent styles
+apply in all cases, even when alternate styles are chosen.  </P>
+  <b>&lt;!--
+rel=&quot;stylesheet&quot; with NO title=&quot;&quot; --&gt;</B>  </P>
+  <b>&lt;link	rel=&quot;stylesheet&quot;
+</B>  
+</P>
+  <b>	href=&quot;css/persistent_styles.css&quot;
+/&gt;</B>  </P>
+  <b>Preferred Styles</B>  </P>
+  Preferred styles
+will be the default, but will be replaced if alternate styles are
+chosen.  </P>
+  <b>&lt;!--
+rel=&quot;stylesheet&quot; AND a title=&quot;&quot; --&gt;</B>  </P>
+  <b>&lt;link	rel=&quot;stylesheet&quot;
+</B>  
+</P>
+  <b>	href=&quot;css/default_styles.css&quot;</B>  </P>
+  <b>	title=&quot;Standard
+Styling&quot;	/&gt;</B>  </P>
+  <b>Alternate Styles</B>  </P>
+  Alternate styles
+will not be applied by default, but may be chosen by the user agent.
+Each alternate stylesheet must have a&nbsp;   <b>title=&quot;&quot;</B>   .  </P>
+  <b>&lt;!-- use
+rel=&quot;alternate stylesheet&quot; for alternative stylesheets...
+--&gt;</B>  </P>
+  <b>&lt;link	rel=&quot;alternate
+stylesheet&quot; </B>  
+</P>
+  <b>	href=&quot;css/large_text.css&quot;</B>  </P>
+  <b>	title=&quot;Large
+Text Styles&quot; /&gt;</B>  </P>
+  <b>Grouping
+Stylesheets</B>  </P>
+  If more than one
+link tag shares the same&nbsp;   <b>title=&quot;&quot;</B>   &nbsp;then
+they will be grouped together.  </P>
+  <b>&lt;-- group
+stylesheets with shared title=&quot;&quot; --&gt;</B>  </P>
+  <b>&lt;link	rel=&quot;alternate
+stylesheet&quot; </B>  
+</P>
+  <b>	href=&quot;css/monchrome_layout.css&quot;</B>  </P>
+  <b>	title=&quot;Monochrome
+Styles&quot;	/&gt;</B>  </P>
+  <b>&lt;link	rel=&quot;alternate
+stylesheet&quot; </B>  
+</P>
+  <b>	href=&quot;css/monchrome_fonts.css&quot;</B>  </P>
+  <b>	title=&quot;Monochrome
+Styles&quot; 	/&gt;</B>  </P>
+  To enable alternate
+stylesheet switching, you can either apply some javascript to manage
+the switch with hyperlinks, or use&nbsp;  <A HREF="https://support.mozilla.org/en-US/questions/841578"> <b>Firefox
+for alternate stylesheets</B>  </A> .  </P>
+  <b>@import: Managing
+Multiple CSS Files</B>  </P>
+  You can use
+the&nbsp;   <b>@import</B>   &nbsp;method
+to import multiple stylesheets from a basic stylesheet that you link
+to. This will reduce the clutter that can sometimes occur within
+the&nbsp;   <b>&lt;head&gt;</B>   &nbsp;section.  </P>
+  It is also a great
+place to be able to manage your CSS. From your main document, create
+a&nbsp;   <b>&lt;link&gt;</B>   &nbsp;to
+your&nbsp;   <b>styles.css</B>   &nbsp;page.  </P>
+  In the body of
+the&nbsp;   <b>styles.css</B>   &nbsp;file,
+import as many files as you need:  </P>
+<UL>
+	<li>  <b>@import
+	url(&quot;css/type.css&quot;);</B>  </P>
+	<li>  <b>@import
+	url(&quot;css/nav.css&quot;);</B>  </P>
+	<li>  <b>@import
+	url(&quot;css/template.css&quot;);</B>  </P>
+</UL>
+  <b>NOTE:</B>   &nbsp;when
+using the&nbsp;   <b>@import</B>   &nbsp;directive
+in an external CSS file, ensure it comes before your CSS selector
+rules. It might be best to not include any CSS rules in a page that
+uses&nbsp;   <b>@import</B>   .  </P>
+  <b>@charset:
+Assigning CSS Character Set</B>  </P>
+  If your CSS files
+only contain standard keyboard characters, assigning the character
+set is not required. The CSS language itself does not use any exotic
+characters, so assigning a charset is often omitted. If, however,
+your CSS needs to use special characters, ensuring the correct
+character set can be very important. Eg: When using a pseudoclass to
+add content to HTML&nbsp;   <b>content:
+&quot;Äwesome!&quot;</B>  </P>
+  If needed, add
+the&nbsp;   <b>@charset</B>   &nbsp;rule
+to the top of the CSS document.  </P>
+  <b>/* assign charset
+at top of .css file */</B>  </P>
+  <b>@charset &quot;utf-8&quot;;</B>  </P>
+   <BR>
+</P>
+  <b>/* CSS rules
+follow... */</B>  </P>
+  <b>@font-face And
+Font Servers</B>  </P>
+  Fonts that aren't
+available on the client machine can be provided by a third-party font
+server or by your website's server.  </P>
+<UL>
+	<li> <A HREF="https://fonts.google.com/"> <b>Google
+	Fonts</B>  </A></P>
+	<li> <A HREF="https://typekit.com/"> <b>Adobe
+	Typekit</B>  </A></P>
+	<li> <A HREF="https://www.fontsquirrel.com/"> <b>Font
+	Squirrel</B>  </A></P>
+	<li>  Plenty more
+	available online...  </P>
+</UL>
+  <b>Third Party Font
+Server</B>  </P>
+  Browse the font
+server site, select the fonts you like and they wil provide you with
+code for a&nbsp;   <b>&lt;link /&gt;</B>   &nbsp;tag
+to add to your HTML. You can then use the font in your CSS.  </P>
+  <b>&lt;!-- add the
+link tag to the HTML --&gt;</B>  </P>
+  <b>&lt;link
+href=&quot;https://fonts.googleapis.com/css?family=Bungee&quot;
+rel=&quot;stylesheet&quot; /&gt;	</B>  </P>
+   <BR>
+</P>
+  <b>/* use the font
+in the CSS */</B>  </P>
+  <b>selector{</B>  </P>
+  <b>	font-family:
+'Bungee', cursive;</B>  </P>
+  <b>}</B>  </P>
+  No longer stuck with
+'Arial', 'Helvetica', 'Georgia' and the rest.  </P>
+  <b>Serve Fonts From
+Your Website</B>  </P>
+  If the font(s) are
+copyright free, or if you have license to distribute a font, you can
+serve them yourself using the CSS&nbsp;  <A HREF="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"> <b>@font-face</B>  </A> &nbsp;directive.  </P>
+  Different client
+systems will need fonts in varying formats, so if you are
+distributing the font yourself, be sure to have the font available in
+most common formats.  </P>
+<UL>
+	<li>  Obtain the
+	font(s) you wish to use. You must either have license to distribute
+	the font or the font must be copyright free.  </P>
+	<li>  Upload your
+	font(s) to a&nbsp;  <A HREF="https://www.fontsquirrel.com/tools/webfont-generator"> <b>Font
+	Generator</B>  </A> &nbsp;to obtain a font
+	kit including various formats for the font(s)  </P>
+	<li>  Uncompress the
+	font kit and locate it somewhere with your website files  </P>
+	<li>  Use&nbsp;  <A HREF="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"> <b>@font-face</B>  </A> &nbsp;to
+	load the fonts. The font-kit generated by Squirrel Font will include
+	some same CSS to help you with the sometimes volumous coding  </P>
+	<li>  Apply the new
+	font in CSS  </P>
+</UL>
+  <b>/* load the font
+in CSS */</B>  </P>
+  <b>@font-face {</B>  </P>
+      <b>font-family:
+'alex_brushregular';</B>  </P>
+      <b>src:
+url('/fonts/alexbrush-regular-webfont.woff2') format('woff2'),</B>  </P>
+         
+ <b>url('/fonts/alexbrush-regular-webfont.woff')
+format('woff'), </B>  
+</P>
+  <b>	
+url('/fonts/alexbrush-regular-webfont.ttf') format('tff');</B>  </P>
+  <b>}</B>  </P>
+   <BR>
+</P>
+  <b>/* use the font
+in CSS */</B>  </P>
+  <b>selector{	</B>  </P>
+  <b>	font: bold 20px
+alex_brushregular ;</B>  </P>
+  <b>	color:#555;</B>  </P>
+  <b>}</B>  </P>
+  <b>Don't get carried
+away with wild font choices. Some fonts have very poor readability,
+reducing accessibility.</B>  </P>
+  <b>CSS Measurements</B>  </P>
+  In CSS, there are a
+number of measurement values that can be used in declarations.  </P>
+  <b>Size measurements</B>  </P>
+<UL>
+	<li>  <b>px</B>   &nbsp;-
+	Pixels is one of the most common measuring types. It is specific to
+	computers, as it renders based on the pixel-display of all monitors.
+	Great for specific measurements on boxes and borders, but for fonts,
+	it can lead to difficulty as some browsers don't allow scaling and
+	font can end up too small  </P>
+	<li>  <b>%</B>   &nbsp;-
+	Percentage measurements are also very common.  </P>
+	<li>  <b>em</B>   &nbsp;-
+	A relative measurement of the letter &quot;m&quot; in the chosen
+	font. This is a popular one for spacing around text, as it inherits
+	the font dimensions  </P>
+	<li>  <b>rem</B>   &nbsp;-
+	Similar to&nbsp;   <b>em</B>   ,
+	this will inherit only the Root value, helpful for avoiding
+	'compound inheritance' values  </P>
+	<li>  <b>pt</B>   &nbsp;-
+	Points is an aold system related to type-setting that had a standard
+	size for points. This is a relative size based on the users' system  </P>
+	<li>  <b>pc</B>   &nbsp;-
+	Picas is a very old system that was frequently related to
+	typewritten documents. Rarely used.  </P>
+	<li>  <b>ex</B>   &nbsp;-
+	Similar to&nbsp;   <b>em</B>   ,
+	this is a relative measurement of the letter &quot;x&quot;. However,
+	it is rarely used, and not fully supported  </P>
+	<li>  <b>vh, vw,
+	vmin, vmax</B>   &nbsp;- size relative to
+	viewport widths and heights. very useful for scaling, though may not
+	enjoy full support yet  </P>
+	<li>  <b>named</B>   &nbsp;-
+	This refers to fonts and a few other elements. The named sizes are
+	xx-small, x-small, small, medium, large, x-large, xx-large. They are
+	relative to the browsers base font size  </P>
+</UL>
+  <b>Color Measurement</B>  </P>
+  Colors can be
+specified in a number of ways, corresponding to the system that your
+organization or visual element requires. Almost all color systems use
+a method for expressing a combination of the three color spaces used
+for displaying colors on computer monitors: Red Green and Blue.  </P>
+<UL>
+	<li>  <b>Hex:&nbsp;#003366</B>   &nbsp;-
+	One of the most common systems, it combines 2 digits each for Red
+	Green and Blue. Each hex pair stand stands for digits between 00 and
+	FF in hexadecimal  </P>
+	<li>  <b>Compact
+	Hex:&nbsp;#f30</B>   &nbsp;- This is almost
+	identical to the Hex version, except that when three numbers are
+	used, most browsers will just double-up each digit. So,&nbsp;   <b>#f30</B>   &nbsp;will
+	become&nbsp;   <b>#ff3300</B>  </P>
+	<li>  <b>Named:&nbsp;cornflowerblue</B>   &nbsp;-
+	Although the official W3C specification only lists 16 named colors,
+	almost every browser supports the various&nbsp;  <A HREF="http://www.google.ca/search?q=css+named+colors"> <b>named
+	colors</B>  </A></P>
+	<li>  <b>RGB:&nbsp;rgb(255,
+	0, 255)</B>   &nbsp;- This allows the user to
+	specify the same thing as Hex, but in Decimal format  </P>
+	<li>  <b>RGB
+	%:&nbsp;rgb(100%, 0%, 50%)</B>   &nbsp;-
+	Almost identical to RGB, but with percentages of each color space
+	instead  </P>
+</UL>
+  <b>Compact CSS Code</B>  </P>
+  When building your
+CSS rules, there are some easy ways to compact your code, reducing
+code bloat and filesize.  </P>
+  <b>Grouping
+selectors</B>  </P>
+<UL>
+	<li>  If you would
+	like to apply the same style to a multitude of different selectors,
+	you can group them with the comma  </P>
+	<li>  <b>h1, h2, h3,
+	h4, h5 { color: red; }</B>  </P>
+	<li>  This can be
+	done with Elements, classes and IDs  </P>
+	<li>  Specific rules
+	for H3 (for example) can come later  </P>
+</UL>
+  <b>Grouping comes to
+Classes</B>  </P>
+<UL>
+	<li>  As well as
+	grouping Elements, you can also group classes  </P>
+	<li>  Define several
+	classes:&nbsp;   <b>.cool{ color:red; }
+	.wicked { border:1px solid black; }</B>  </P>
+	<li>  Assign several
+	classes at once:&nbsp;   <b>&lt;p class=&quot;cool
+	wicked&quot;&gt;</B>   &nbsp;will select both
+	the&nbsp;   <b>cool</B>   &nbsp;and&nbsp;   <b>wicked</B>   &nbsp;classes  </P>
+	<li>  The order of
+	the attribute values is irrelevant  </P>
+	<li>  Case is
+	important! Remember to use a single rule for CSS naming and stick
+	with it  </P>
+</UL>
+  <b>Rule Compacting</B>  </P>
+  There are a lot of
+rules that will accept a compacted ruleset:  </P>
+<UL>
+	<li>  <b><A HREF="https://developer.mozilla.org/en/docs/Web/CSS/margin">margin</A>:
+	top right bottom left;</B>  </P>
+	<li>  <b><A HREF="https://developer.mozilla.org/en/docs/Web/CSS/padding">padding</A>:
+	top right bottom left;</B>  </P>
+	<li>  <b><A HREF="https://developer.mozilla.org/en/docs/Web/CSS/border">border</A>:
+	width style color;</B>  </P>
+	<li>  <b><A HREF="https://developer.mozilla.org/en/docs/Web/CSS/font">font</A>:
+	font-style font-variant font-weight font-size/line-height
+	font-family;</B>  </P>
+	<li>  <b><A HREF="https://developer.mozilla.org/en-US/docs/Web/CSS/background">background</A>:
+	color image position repeat size attachment;</B>  </P>
+</UL>
+  Box model properties
+support 1, 2, 3 and 4 values. For example:  </P>
+<UL>
+	<li>  <b>border-width:10px;</B>  </P>
+	<UL>
+		<li>  all four
+		borders are 10px  </P>
+	</UL>
+	<li>  <b>border-width:10px
+	20px;</B>  </P>
+	<UL>
+		<li>  top and bottom
+		borders are 10px  </P>
+		<li>  left and right
+		borders are 20px  </P>
+	</UL>
+	<li>  <b>border-width:10px
+	20px 30px;</B>  </P>
+	<UL>
+		<li>  top border is
+		10px  </P>
+		<li>  left and right
+		borders are 20px  </P>
+		<li>  bottom border
+		is 30px  </P>
+	</UL>
+	<li>  <b>border-width:10px
+	20px 30px 40px;</B>  </P>
+	<UL>
+		<li>  top border is
+		10px  </P>
+		<li>  right border
+		is 20px  </P>
+		<li>  bottom border
+		is 30px  </P>
+		<li>  left border is
+		40px  </P>
+	</UL>
+</UL>
+  Note you do not need
+to specify values for all fields in a compact rule. Just keep the
+space delimited list in the correct order. For example, you could
+specify several font values all at once:<BR>   <b>font:
+italic small-caps bold 1.3em &quot;helvetica&quot;, sans-serif;</B>   &nbsp;<BR>or,
+specify only a select couple.<BR>   <b>font:
+1.3em &quot;helvetica&quot;, sans-serif;</B>  </P>
+  <b>CSS Selectors</B>  </P>
+  There are
+several&nbsp;  <A HREF="http://css.maxdesign.com.au/selectutorial/"> <b>advanced
+CSS selector techniques</B>  </A> &nbsp;that
+provide plenty of options for the application of style.  </P>
+  <b>Universal
+Selector</B>  </P>
+<UL>
+	<li>  This is a
+	fairly widely supported selector: the asterisk&nbsp;   <b>*</B>  </P>
+	<li>  Use it to
+	specify a global rule  </P>
+	<li>  <b>* { color:
+	red; }</B>   &nbsp;will make all font color
+	red on your page  </P>
+	<li>  The universal
+	selector can be very powerful, as it can command a lot of changes to
+	your styles,  </P>
+</UL>
+  <b>Pseudo-classes</B>  </P>
+  A Pseudo-class is a
+selector that allows you to reference a specific action or attribute
+of an element. This is most often used when specifying&nbsp;   <b>a</B>   &nbsp;attributes,
+such as&nbsp;   <b>:visited</B>   &nbsp;and&nbsp;   <b>:link</B>   .  </P>
+  There are other uses
+for pseudo elements, that will allow for greater detail in styling
+content, such as&nbsp;   <b>:first-letter</B>   &nbsp;and&nbsp;   <b>:first-line</B>   .
+These allow the browser to apply a style based on an unselected, but
+displayed element.  </P>
+  <I>Best
+part:</I>   &nbsp;No&nbsp;   <b>span</B>   &nbsp;or&nbsp;   <b>div</B>   &nbsp;required
+to access these pseudo-elements.  </P>
+<UL>
+	<li>  Within&nbsp;   <b>a</B>   &nbsp;pseudo-elements
+	in particular, it's important to follow a certain order:  </P>
+	<UL>
+		<li>  <b>a:link</B>  </P>
+		<li>  <b>a:visited</B>  </P>
+		<li>  <b>a:hover</B>  </P>
+		<li>  <b>a:active</B>  </P>
+	</UL>
+</UL>
+  Easy mnemonic: LVHA
+-&nbsp;   <b>L</B>   o   <b>V</B>   e
+-&nbsp;   <b>HA</B>   te.
+Because of the way that CSS applies rules, it looks at the LAST rule
+for a given element and applies more weight to it. For example, if
+you are hovering over a link, you don't want to see the link state  </P>
+<UL>
+	<li>  There are
+	several additional&nbsp;  <A HREF="http://css.maxdesign.com.au/selectutorial/selectors_pseudo_class.htm"> <b>pseudo-classes</B>  </A> &nbsp;and&nbsp;  <A HREF="http://css.maxdesign.com.au/selectutorial/selectors_pseudo_element.htm"> <b>pseudo-elements</B>  </A></P>
+	<UL>
+		<li>  <b>selector:before,
+		selector:after</B>   &nbsp;- add text
+		content before or after the selector's content  </P>
+		<li>  <b>selector:first-line,
+		selector:first-letter</B>   &nbsp;- style
+		the first line or letter of the selector  </P>
+		<li>  <b>selector:first-of-type</B>   ,&nbsp;   <b>selector:last-of-type</B>   &nbsp;-
+		style the first or last tag of the selector type  </P>
+		<li>  <b>selector:nth-of-type(n)</B>   &nbsp;-
+		select the nth() tag of the same type as selector  </P>
+		<li>  <b>selector:nth-child(n)</B>   &nbsp;-
+		select the nth() child  </P>
+		<li>  <b>selector:nth-child(2n)</B>   &nbsp;-
+		select every even numbered child  </P>
+		<li>  <b>selector:nth-child(2n+1)</B>   &nbsp;-
+		select every odd numbered child  </P>
+	</UL>
+</UL>
+  <b>Descendant
+Selectors</B>  </P>
+<UL>
+	<li>  Separated by a
+	space, the last element is the one being styled  </P>
+	<li>  <b>h1 em</B>   &nbsp;will
+	apply rules to all em's within an h1  </P>
+	<li>  You can have as
+	many as you want:&nbsp;   <b>ul ol ul li</B>  </P>
+	<li>  Great for
+	specifying different styles when they apply only in certain areas  </P>
+	<li>  <b>#nav a { ...
+	}</B>   &nbsp;will only apply these rules to
+	Anchors within the div called nav  </P>
+	<li>  Degree of
+	separation can be infinite, so be careful  </P>
+	<li>  <b>p em</B>   &nbsp;will
+	match ANY em that descends from a paragraph, no matter how nested  </P>
+</UL>
+  <b>Child Selectors</B>  </P>
+<UL>
+	<li>  Uses the &gt;
+	combinator to specify children  </P>
+	<li>  Will select an
+	element that is directly descended from another element  </P>
+	<li>  <b>p &gt;
+	strong</B>   &nbsp;will only select a strong
+	tag that is inside a paragraph  </P>
+	<li>  Will not select
+	a strong tag embedded in any other tag (even if it is within a
+	paragraph)  </P>
+</UL>
+  <b>Adjacent Sibling
+Selectors</B>  </P>
+<UL>
+	<li>  The +
+	combinator specifies the first sibling tag following the root  </P>
+	<li>  It will not
+	include the root for styling  </P>
+	<li>  <b>div +
+	h2</B>   &nbsp;will select the first sibling
+	h2 following a div tag  </P>
+</UL>
+  <b>General Sibling
+Selectors</B>  </P>
+<UL>
+	<li>  The ~
+	combinator specifies all siblings tags following the root  </P>
+	<li>  It will not
+	select sibling tags that precede the root, nor will it include the
+	root  </P>
+	<li>  <b>h1 ~ h2</B>   &nbsp;will
+	select all sibling h2 tags that follow an h1  </P>
+</UL>
+  <b>Attribute
+Selectors</B>  </P>
+<UL>
+	<li>  You can also
+	select elements by what the element contains  </P>
+	<li>  The method
+	is:&nbsp;   <b>element[attribute=value]</B>  </P>
+	<li>  If you specify
+	an attribute with no value, you will match any element that simply
+	has the attribute present (no matter what it's value is)  </P>
+	<li>  <b>p[align]
+	{color: red;}</B>   &nbsp;will turn red any
+	paragraph that contains an align attribute  </P>
+	<li>  Similarly,&nbsp;   <b>img[alt]
+	{border: 1pt red solid; }</B>   &nbsp;will
+	draw a red line around all images with an alt attribute  </P>
+	<li>  You can further
+	direct the attribute selector to find content that is at the
+	beginning (using the carat: ^), somewhere inside (using the
+	asterisk: *) or end of a value (using the dollar sign: $)  </P>
+	<li>  Attribute
+	selector examples:  </P>
+	<UL>
+		<li>  <b>img[alt]</B>   &nbsp;-
+		select all img tags that have alt attributes  </P>
+		<li>  <b>img[src=&quot;images/pic.jpg&quot;]</B>   &nbsp;-
+		select img tags whose src is 'images/pic.jpg'  </P>
+		<li>  <b>img[src^=&quot;gallery/&quot;]</B>   &nbsp;-
+		select all img tags whose src BEGINS with 'gallery/'  </P>
+		<li>  <b>img[src*=&quot;logo&quot;]</B>   &nbsp;-
+		select all img tags whose src CONTAINS 'logo'  </P>
+		<li>  <b>img[src$=&quot;.png&quot;]</B>   &nbsp;-
+		select all img tags whose src ENDS with '.png'  </P>
+	</UL>
+</UL>
+  <b>Rule Order &amp;
+Specificity</B>  </P>
+  When a style
+declaration is found to be in conflict with a previously declared
+style, there is a method for determining which one will win out. The
+process is built into every web browser, and almost all of them
+calculate the values identically (for once!).  </P>
+  Here is how the W3C
+defines the process by which style order is determined:  </P>
+<UL>
+	<li>  <b>Discover all
+	declarations.</B>   &nbsp;Find all
+	declarations that apply to the element and property in question, for
+	the target media type. Declarations apply if the associated selector
+	matches the element in question.  </P>
+	<li>  <b>Sheet
+	Order.</B>   &nbsp;The primary sort of the
+	declarations is by weight and origin: for normal declarations,
+	author style sheets override user style sheets which override the
+	default style sheet.  </P>
+	<UL>
+		<li>  <I>Note:</I>   &nbsp;For
+		&quot;!important&quot; declarations, user style sheets override
+		author style sheets which override the default style sheet.
+		&quot;!important&quot; declaration override normal declarations. An
+		imported style sheet has the same origin as the style sheet that
+		imported it.  </P>
+	</UL>
+	<li>  <b>Specificity:</B>   &nbsp;The
+	secondary sort is by specificity of selector: more specific
+	selectors will override more general ones. Pseudo-elements and
+	pseudo-classes are counted as normal elements and classes,
+	respectively.  </P>
+	<li>  <b>Sort by
+	Order:</B>   &nbsp;Finally, sort by order
+	specified: if two rules have the same weight, origin and
+	specificity, the latter specified wins. Rules in imported style
+	sheets are considered to be before any rules in the style sheet
+	itself.  </P>
+</UL>
+  All of the rules are
+pretty straightforward, except for Specificity, which bears some
+explanation.  </P>
+  <b>Specificity</B>   &nbsp;is
+a method for determining what rules are applied when a conflict
+between two selectors occurs. Through a method of adding values when
+certain elements and selectors are present, a specificity number can
+be applied to any CSS rule. The one with highest specificity wins and
+the associated rule is applied to the element(s) in question.  </P>
+  <b>Ruleset for
+Specificity</B>  </P>
+  Style sheets can
+also override conflicting style sheets based on their level of
+specificity, where a more specific style will always win out over a
+less specific one. It is simply a counting game to calculate the
+specificity of a selector.  </P>
+<OL>
+	<li>  Count the
+	number of IDs in the selector.  </P>
+	<li>  Count the
+	number of CLASS, pseudoclass, and attribute selectors.  </P>
+	<li>  Count the
+	number of HTML tag names in the selector.  </P>
+</OL>
+  Next, write the
+three numbers in exact order with no spaces or commas to obtain a
+three digit number. (Note, you may need to convert the numbers to a
+larger base to end up with three digits.) The final list of numbers
+corresponding to selectors will easily determine specificity with the
+higher numbers winning out over lower numbers. Following is a list of
+selectors sorted by specificity:  </P>
+<UL>
+	<li>  #id1<BR>/*&nbsp;   <b>id</B>   =1&nbsp;   <b>class</B>   =0&nbsp;   <b>HTML</B>   =0
+	--&gt; specificity = 100 */  </P>
+	<li>  UL UL
+	LI.red<BR>/*&nbsp;   <b>id</B>   =0&nbsp;   <b>class</B>   =1&nbsp;   <b>HTML</B>   =3
+	--&gt; specificity = 013 */  </P>
+	<li>  LI.red<BR>/*&nbsp;   <b>id</B>   =0&nbsp;   <b>class</B>   =1&nbsp;   <b>HTML</B>   =1
+	--&gt; specificity = 011 */  </P>
+	<li>  LI<BR>/*&nbsp;   <b>id</B>   =0&nbsp;   <b>class</B>   =0&nbsp;   <b>HTML</B>   =1
+	--&gt; specificity = 001 */  </P>
+</UL>
+  <b>!important rule</B>  </P>
+<UL>
+	<li>  This
+	declaration, when added to a rule, will override almost all other
+	declarations, with no respect for specificity.  </P>
+	<li>  It indicates
+	that this rule should take over any previous rules that might govern
+	a specific element.  </P>
+	<li>  Example&nbsp;   <b>.selector{
+	color:blue !important; }</B>  </P>
+	<li>  This rule can
+	cause havoc if overused, as it will overrule any other declaration
+	with the same selector.&nbsp;   <b>Be careful
+	with&nbsp;!important</B>  </P>
+</UL>
+  <b>To Do</B>  </P>
+<UL>
+	<li>  Download,
+	review, and complete the homework assignment from&nbsp;  <A HREF="https://learn.bcit.ca/"> <b>D2L</B>  </A></P>
+	<li>  Find a partner
+	for your homework.  </P>
+	<li>  Practice
+	using&nbsp;  <A HREF="http://bcitcomp.ca/1950/lecture/03/#advanced_selectors"> <b>advanced
+	CSS selectors</B>  </A></P>
+</UL>
+   <BR>
+</P>
+ <BR>
+</P>
+<script type="text/javascript" src="./scripts/nav_animation.js"></script>
+                    </div></div>
+</BODY>
+</HTML>
