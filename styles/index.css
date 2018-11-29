@@ -22,7 +22,7 @@ body {
 
 header {
   height: 60px;
-  background-color: white;
+  background-color: lightgrey;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -98,7 +98,7 @@ li > a {
   z-index: 1; }
 
 .banner {
-  background-color: black; }
+  background-color: #003e6b; }
 
 .banner img {
   filter: opacity(0.8); }
@@ -111,7 +111,7 @@ li > a {
   padding: 30px;
   font-size: 3em;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-  box-shadow: 0px 0px 8px 1px darkgrey; }
+  box-shadow: 0px 0px 8px 1px #003e3c; }
 
 .banner-course-number {
   top: 30%;
@@ -123,20 +123,20 @@ li > a {
 
 .info-cards {
   padding: 15px 0px;
-  background-color: #7e7b7b;
+  background-color: lightgrey;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%; }
 
 .card-holder {
-  background-color: #7e7b7b;
+  background-color: lightgrey;
   padding-top: 15px;
   padding-bottom: 15px; }
 
 .card {
   background-color: #003ec8;
   border-radius: 4px;
-  box-shadow: 1px 1px 6px 1px black;
+  box-shadow: 1px 1px 6px 1px #003e3c;
   width: 65%;
   height: 300px;
   padding: 6px;
@@ -174,6 +174,71 @@ li > a {
   padding: 8px;
   color: white;
   font-weight: 600; }
+
+.banner-get-started-h2 {
+  position: absolute;
+  margin: 0px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -18%);
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  font-size: 4em;
+  color: white;
+  text-shadow: 1px 1px black;
+  padding: 20px;
+  background-color: #003e6b;
+  box-shadow: 0px 0px 12px 1px #003e3c; }
+
+.banner button {
+  height: 75px;
+  font-size: 1.5em;
+  position: absolute;
+  top: 75%;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0px 0px 12px 2px #003e3c;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s; }
+
+.banner button:hover {
+  background-color: #003e6b;
+  color: white; }
+
+.banner-about-btn {
+  left: 10%; }
+
+.banner-schedule-btn {
+  left: 50%;
+  transform: translateX(-50%); }
+
+.banner-contact-btn {
+  left: 72.5%; }
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #003e6b;
+  color: white; }
+
+footer > div {
+  padding: 25px; }
+
+footer div:nth-child(2) {
+  text-align: center; }
+
+footer div:nth-child(2) button {
+  background: none;
+  border: 2px solid white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.3em;
+  color: white; }
+
+footer div:nth-child(2) button:hover {
+  background: white;
+  color: #003e6b;
+  font-weight: bold; }
 
 @media (max-width: 1200px) {
   .banner > h1 {
